@@ -15,7 +15,7 @@ main.main-wrapper{
     justify-content: center;
     align-items: center;
 }
-#inp-msg{
+#inp-msg, #gender-select{
     display: none;
     font-size: 12px;
 }
@@ -32,6 +32,7 @@ form.form p{
 }
 .form-container{
     position: relative;
+    display: block;
 }
 input{
     border: 1px solid #4a4a4a;
