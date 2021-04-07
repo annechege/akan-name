@@ -14,3 +14,11 @@ main.main-wrapper{
     justify-content: center;
     align-items: center;
 }
+.main-card{
+    width: 40%;
+    margin: 0 auto;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
