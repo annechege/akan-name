@@ -1,6 +1,10 @@
 # akan-name
 ## Project description
-Finding your  birthday name in relation to the Ganinan culture
+
+* What is Akan Name *
+Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. 
+
+This project helps the user finding thir birthday name in relation to the Ganinan culture (Akan name)
 
 https://annechege.github.io/akan-name/
 
