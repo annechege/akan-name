@@ -1,7 +1,29 @@
 const bdayInp = document.querySelector('#bday');
 const btn = document.querySelector('#btn');
-const para = document.querySelector('#inp-msg')
+const para = document.querySelector('#inp-msg');
+const check = document.querySelectorAll('.check');
 
+const maleAkan = {
+    Sunday: 'Kwasi',
+    Monday: 'Kwadwo',
+    Tuesday: 'Kwabena',
+    Wednesday: 'Kwaku',
+    Thursday:  'Yaw',
+    Friday: 'Kofi',
+    Saturday: 'Kwame'
+}
+
+const femaleAkan = {
+    Sunday: 'Akosua',
+    Monday: 'Adwoa',
+    Tuesday: 'Abenaa',
+    Wednesday: 'Akua',
+    Thursday:  'Yaa',
+    Friday: 'Afua',
+    Saturday: 'Ama'
+}
+
+// validate the date input
 function validatedate(dateString){      
     let dateformat = /^(0?[1-9]|1[0-2])[\/](0?[1-9]|[1-2][0-9]|3[01])[\/]\d{4}$/;      
           
@@ -48,24 +70,33 @@ function validatedate(dateString){
     return true;      
 } 
 
-
-
 function inputValidation(inp){
     btn.onclick = event => {
         event.preventDefault();
         if(inp.value == ''){
             para.style.display = "block"
             para.style.color = "red"
-            para.innerHTML = 'please enter your bday'
+            para.innerHTML = 'Please enter your bday'
         }else{
             if(validatedate(inp.value)){
                 para.style.display = "block";
                 para.style.color = "#23d160"
-                para.innerHTML = "date valid"
+                para.innerHTML = "Date valid"
+
+                let weekday = Object.keys(maleAkan)[new Date(inp.value).getDay()]
+
+                for (let index = 0; index < check.length; index++) {
+                    const element = check[index];
+                    if(element.checked){
+
+                    }else{
+
+                    }
+                }
             }else{
                 para.style.display = "block";
                 para.style.color = "red"
-                para.innerHTML = "the date is not valid"
+                para.innerHTML = "The date is not valid"
             }
         }
     }
