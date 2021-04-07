@@ -24,8 +24,18 @@
                     <input id="bday" type="text" name="bday" placeholder="eg: mm/dd/yyyy">
                     <p id="inp-msg"></p>
                     <p>Select gender</p>
-                    <input type="radio"> Male 
-                    <input type="radio"> Female
+                    <div>
+                        <input type="radio" id="huey" name="drone" value="huey"
+                               checked>
+                        <label for="huey">Huey</label>
+                      </div>
+                      
+                      <div>
+                        <input type="radio" id="dewey" name="drone" value="dewey">
+                        <label for="dewey">Dewey</label>
+                      </div>
+
+                    <p id="gender-select"></p>
 
                     <button id="btn" type="button" class="button btn">Submit</button>
                 </form>

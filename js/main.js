@@ -2,6 +2,7 @@ const bdayInp = document.querySelector('#bday');
 const btn = document.querySelector('#btn');
 const para = document.querySelector('#inp-msg');
 const check = document.querySelectorAll('.check');
+const formContainer = document.querySelector('.form-container')
 
 const maleAkan = {
     Sunday: 'Kwasi',
@@ -85,14 +86,7 @@ function inputValidation(inp){
 
                 let weekday = Object.keys(maleAkan)[new Date(inp.value).getDay()]
 
-                for (let index = 0; index < check.length; index++) {
-                    const element = check[index];
-                    if(element.checked){
-
-                    }else{
-
-                    }
-                }
+                console.log(maleAkan[weekday])
             }else{
                 para.style.display = "block";
                 para.style.color = "red"
