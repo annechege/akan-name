@@ -90,7 +90,11 @@ function inputValidation(inp){
 
                 genderSec.forEach(gender => {
                     if(gender.checked){
-                        
+                        if(gender.id == 'male'){
+                            console.log(maleAkan[weekday])
+                        }else{
+                            console.log(femaleAkan[weekday])
+                        }
                     }
                 })
 
