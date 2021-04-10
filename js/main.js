@@ -94,7 +94,7 @@ function inputValidation(inp){
                         if(gender.id == 'male'){
                             res.innerHTML = `Your Akan name is ${maleAkan[weekday]}`
                         }else{
-                            console.log(femaleAkan[weekday])
+                            res.innerHTML = `Your Akan name is ${femaleAkan[weekday]}`
                         }
                     }
                 })
