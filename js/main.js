@@ -92,9 +92,9 @@ function inputValidation(inp){
                 genderSec.forEach(gender => {
                     if(gender.checked){
                         if(gender.id == 'male'){
-                            res.innerHTML = `Your Akan name is ${maleAkan[weekday]}`
+                            res.innerHTML = `Your Akan name is <strong>${maleAkan[weekday]}</strong>`
                         }else{
-                            res.innerHTML = `Your Akan name is ${femaleAkan[weekday]}`
+                            res.innerHTML = `Your Akan name is <strong>${femaleAkan[weekday]}</strong>`
                         }
                     }
                 })
