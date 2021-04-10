@@ -1,8 +1,10 @@
-// const bdayInp = document.querySelector('#bday');
-// const btn = document.querySelector('#btn');
-// const para = document.querySelector('#inp-msg');
-// const check = document.querySelectorAll('.check');
-// const formContainer = document.querySelector('.form-container')
+const bdayInp = document.querySelector('#bday');
+const btn = document.querySelector('#btn');
+const para = document.querySelector('#inp-msg');
+const check = document.querySelectorAll('.check');
+const formContainer = document.querySelector('.form-container')
+const genderSec = document.querySelectorAll('.gender')
+
 
 const maleAkan = {
     Sunday: 'Kwasi',
@@ -86,7 +88,10 @@ function inputValidation(inp){
 
                 let weekday = Object.keys(maleAkan)[new Date(inp.value).getDay()]
 
-                console.log(maleAkan[weekday])
+                genderSec.forEach(gender => {
+                    
+                })
+
             }else{
                 para.style.display = "block";
                 para.style.color = "red"
