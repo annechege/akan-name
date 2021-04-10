@@ -89,7 +89,9 @@ function inputValidation(inp){
                 let weekday = Object.keys(maleAkan)[new Date(inp.value).getDay()]
 
                 genderSec.forEach(gender => {
-                    
+                    if(gender.checked){
+                        
+                    }
                 })
 
             }else{
