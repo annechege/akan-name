@@ -1,8 +1,8 @@
-const bdayInp = document.querySelector('#bday');
-const btn = document.querySelector('#btn');
-const para = document.querySelector('#inp-msg');
-const check = document.querySelectorAll('.check');
-const formContainer = document.querySelector('.form-container')
+// const bdayInp = document.querySelector('#bday');
+// const btn = document.querySelector('#btn');
+// const para = document.querySelector('#inp-msg');
+// const check = document.querySelectorAll('.check');
+// const formContainer = document.querySelector('.form-container')
 
 const maleAkan = {
     Sunday: 'Kwasi',
