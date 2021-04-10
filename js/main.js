@@ -4,6 +4,7 @@ const para = document.querySelector('#inp-msg');
 const check = document.querySelectorAll('.check');
 const formContainer = document.querySelector('.form-container')
 const genderSec = document.querySelectorAll('.gender')
+const res = document.querySelector('.result')
 
 
 const maleAkan = {
@@ -91,7 +92,7 @@ function inputValidation(inp){
                 genderSec.forEach(gender => {
                     if(gender.checked){
                         if(gender.id == 'male'){
-                            console.log(maleAkan[weekday])
+                            res.innerHTML = `Your Akan name is ${maleAkan[weekday]}`
                         }else{
                             console.log(femaleAkan[weekday])
                         }
